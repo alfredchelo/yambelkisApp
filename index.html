@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyer Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flyer Creator</h1>
+        <div>
+            <label for="imageUpload">Subir imagen:</label>
+            <input type="file" id="imageUpload" accept="image/*">
+        </div>
+        <div>
+            <label for="textInput">Texto:</label>
+            <textarea id="textInput" rows="4" cols="50"></textarea>
+        </div>
+        <button onclick="generateFlyer()">Crear Flyer</button>
+        <div id="flyerContainer">
+            <!-- Aquí se mostrará el flyer generado -->
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
